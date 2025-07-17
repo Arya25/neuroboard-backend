@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: neuroboard-api
+    env: python
+    buildCommand: ""
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 8000
+    envVars:
+      - key: DATABASE_URL
+        value: postgresql+asyncpg://neuroboard_db_user:wQZWqULzVp5R0VgdLkvwjAnTkYyTZ13r@dpg-d1s4d6mmcj7s73flvpl0-a.virginia-postgres.render.com/neuroboard_db
