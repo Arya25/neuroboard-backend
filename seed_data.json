@@ -1,0 +1,50 @@
+[
+  {
+    "external_id": "A1001",
+    "diagnosis": "Autism",
+    "age": 10,
+    "gender": "Male",
+    "state": "NY",
+    "joined_at": "2024-10-01T10:00:00"
+  },
+  {
+    "external_id": "A1002",
+    "diagnosis": "Autism",
+    "age": 6,
+    "gender": "Female",
+    "state": "CA",
+    "joined_at": "2024-11-12T15:30:00"
+  },
+  {
+    "external_id": "A1003",
+    "diagnosis": "Autism",
+    "age": 12,
+    "gender": "Male",
+    "state": "TX",
+    "joined_at": "2024-12-05T09:15:00"
+  },
+  {
+    "external_id": "A1004",
+    "diagnosis": "Autism",
+    "age": 7,
+    "gender": "Female",
+    "state": "FL",
+    "joined_at": "2025-01-18T14:45:00"
+  },
+  {
+    "external_id": "A1005",
+    "diagnosis": "Autism",
+    "age": 11,
+    "gender": "Other",
+    "state": "IL",
+    "joined_at": "2025-02-20T13:00:00"
+  },
+  {
+    "external_id": "A1006",
+    "diagnosis": "Autism",
+    "age": 11,
+    "gender": "Other",
+    "state": "IL",
+    "joined_at": "2025-02-20T13:00:00"
+  }
+]
