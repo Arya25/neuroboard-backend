@@ -72,3 +72,6 @@ async def get_participants(
     return [p.__dict__ for p in participants]
 
 
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=False)
