@@ -7,7 +7,7 @@ from models import Participant
 
 fake = Faker()
 
-diagnoses = ["Autism"]
+diagnoses = ["ADHD", "Autism", "Dyslexia", "Anxiety", "Depression"]
 states = ["NY", "CA", "TX", "FL", "IL"]
 genders = ["Male", "Female", "Other"]
 
