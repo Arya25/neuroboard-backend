@@ -13,9 +13,19 @@ from ingest import run_ingestor
 
 from typing import Optional, List
 from sqlalchemy import and_, select, func
+from fastapi.middleware.cors import CORSMiddleware
+
 
 
 app = FastAPI(title="NeuroBoard")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # or ["http://localhost:5173"] to be stricter
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.on_event("startup")
 async def startup_event():
