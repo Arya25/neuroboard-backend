@@ -81,6 +81,12 @@ async def get_participants(
     participants = result.scalars().all()
     return [p.__dict__ for p in participants]
 
+@app.get("/participants/count")
+async def get_participant_count(session: AsyncSession = Depends(get_session)):
+    result = await session.execute(select(func.count()).select_from(Participant))
+    count = result.scalar()
+    return {"count": count}
+
 @app.get("/chart-data/gender")
 async def get_gender_chart_data(
     state: Optional[str] = None,
